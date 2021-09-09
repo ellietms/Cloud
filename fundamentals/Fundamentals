@@ -1,0 +1,20 @@
+==== STORAGE ====
+
+Databases: RDBS & No sql databases
+No-sql database: DYNAMODB (greate flexibility - data is JSON - OFFERED BY AWS - (NETFLIX, SAMSUNG))
+sql database: RDBS (when we connect it - use : Endpoint in connectivity & security - connect to DB with mysql)
+Redshift: (managed data service - holds large volumns of data (big data) - the datas store in column)
+S3: is an object storage system in the Cloud.
+S3 Glacier: is good for data archiving purposes.(the data we want to access less frequently) 
+(DATA ARCHIVING:The practice of identifying data that is no longer active and moving it out of production systems into long-term storage systems )
+Cloud Front: is using for caching and speed up the delivery of the content of the website
+(we should have our bucket before creating cache though!)
+
+
+=== Security ===
+
+FIREWALL: (network security mechanism - Monitors & controls incoming and outgoing data - based on pre set rules)
+
+AWS WAF(web application firewall) : (protects web application - rules  )
+
+
