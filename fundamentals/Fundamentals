@@ -5,16 +5,56 @@ No-sql database: DYNAMODB (greate flexibility - data is JSON - OFFERED BY AWS - 
 sql database: RDBS (when we connect it - use : Endpoint in connectivity & security - connect to DB with mysql)
 Redshift: (managed data service - holds large volumns of data (big data) - the datas store in column)
 S3: is an object storage system in the Cloud.
-S3 Glacier: is good for data archiving purposes.(the data we want to access less frequently) 
+S3 Glacier: is good for data archiving purposes.(the data we want to access less frequently)
 (DATA ARCHIVING:The practice of identifying data that is no longer active and moving it out of production systems into long-term storage systems )
 Cloud Front: is using for caching and speed up the delivery of the content of the website
 (we should have our bucket before creating cache though!)
-
 
 === Security ===
 
 FIREWALL: (network security mechanism - Monitors & controls incoming and outgoing data - based on pre set rules)
 
-AWS WAF(web application firewall) : (protects web application - rules  )
+AWS WAF(web application firewall) : (protects web application - rules )
 
+=== DNS ====
 
+Route53 :
+it is a cloud domain name system (translate ugly numbers :P )
+Benefits : check the health of the sources / route internet traffic
+
+=== Elasticity in cloud ===
+
+databases, servers, application resources can change their sizes based on the amount of the users.
+resources can:
+scale up (vertically) by changing their memory size (EC2)
+scale out (horizantally) by changing the amount of servers
+
+==== 🚨 🚨 IMPORTANT 🚨 🚨 =====
+
+=== EC2 ====
+it is a web service that provides secure, resizable compute capacity in the cloud.
+It is designed to make web-scale cloud computing easier for developers.
+
+==== EC2 Auto Scalling ====
+Amazon EC2 Auto Scaling helps you ensure that you have the correct number of Amazon EC2 instances available to handle the load for your application.
+purpose : maintain application availability and provide peak performance to your users.
+EC2 works with the SNS notifications
+(it is automatically add or remove EC2 instances for availability and better performance)
+
+==== Elastic load balancer ====
+
+3 types :
+
+- application load balancer:
+
+allows you to host the different API endpoints of your application on different servers. The load balancer then redirects the incoming HTTP/HTTP traffic to the suitable server based on the rules you specify in the configuration
+
+- network load balancer:
+
+- classic load balancer:
+
+==== Main difference between load balancer and EC2 auto scaling ====
+
+Auto-Scaling is about adding new instances to keep up with the load - so when the load reaches a certain level it will spin up new instance to keep up - and spin down instances when no longer needed.
+
+Load balancing is about directing requests to your different instances to try and keep them all working as evenly as possible (rather than 1 handling 80% of the requests and the other 20).
