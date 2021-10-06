@@ -1,0 +1,24 @@
+1) Check aws version : 
+  aws --version
+
+2) Get the details of all the instances which are running: 
+  aws ec2 describe-instances
+
+3) start or stop an instance:
+  aws ec2 start-instances --instance-ids (instance-id-number)
+
+4) publish a message to sns:
+  aws (name of the service) (action) --topic-arn (arn) --message (our message)
+  aws sns publish --topic-arn (arn code from aws) --message "added something :)"
+
+5) send message to sqs:
+   aws (name of the service) (action) --queue-url (url) --message-body (our message)
+   aws sqs send-message --queue-url (url) --message-body "added something :)"
+
+6) receive message from sqs:
+    aws (name of the service) (action) --queue-url (url) 
+    aws sqs receive-message --queue-url (url)
+
+7) get all of the objects from s3 bucket (contents):
+    aws (name of the service) (action) (bucket name) 
+    aws s3 ls s3://code

@@ -58,3 +58,10 @@ allows you to host the different API endpoints of your application on different 
 Auto-Scaling is about adding new instances to keep up with the load - so when the load reaches a certain level it will spin up new instance to keep up - and spin down instances when no longer needed.
 
 Load balancing is about directing requests to your different instances to try and keep them all working as evenly as possible (rather than 1 handling 80% of the requests and the other 20).
+
+
+===== Messaging & containers =====
+
+SQS(Simple Queue Service)
+
+
