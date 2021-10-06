@@ -22,3 +22,9 @@ aws iam list-users --profile <profile-name>
 7# Change the value:
 # aws configure set <varname> <value> [--profile profile-name]
  aws configure set default.region us-east-2
+
+
+
+ # Let the system know that your sensitive information is residing in the .aws folder
+export AWS_CONFIG_FILE=~/.aws/config
+export AWS_SHARED_CREDENTIALS_FILE=~/.aws/credentials
