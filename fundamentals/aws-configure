@@ -1,0 +1,24 @@
+- aws configure list
+
+1# If you do not use the profile-name, a default profile will be created for you.
+aws configure --profile <profile-name>
+
+2# View the current configuration
+aws configure list --profile <profile-name>
+
+3# View all existing profile names
+aws configure list-profiles
+
+4# In case, you want to change the region in a given profile
+# aws configure set <parameter> <value>  --profile <profile-name>
+aws configure set region us-east-1  --profile <profile-name>
+
+5# If you've just one profile set locally
+aws iam list-users
+
+6# If you've multiple profiles set locally
+aws iam list-users --profile <profile-name>
+
+7# Change the value:
+# aws configure set <varname> <value> [--profile profile-name]
+ aws configure set default.region us-east-2

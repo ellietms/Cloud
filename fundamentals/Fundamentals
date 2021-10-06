@@ -1,3 +1,9 @@
+==== IAM ====
+
+AWS Identity and Access Management (IAM) service allows you to authorize users / applications (such as AWS CLI) to access AWS resources.
+
+* The Access key is a combination of an Access Key ID and a Secret Access Key
+
 ==== STORAGE ====
 
 Databases: RDBS & No sql databases
